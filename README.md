@@ -71,3 +71,20 @@ app/
 - `POST /chat`
 
 Use `Authorization: Bearer <token>` for protected routes.
+
+## Frontend (React + TypeScript)
+A modern black-and-white UI is included in `frontend/` and integrates with the FastAPI backend.
+
+1. Start backend (`uvicorn app.main:app --reload --port 8000`).
+2. In another terminal:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+3. Open `http://localhost:3000`.
+
+Optional API URL override:
+```bash
+VITE_API_URL=http://localhost:8000 npm run dev
+```
