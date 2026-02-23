@@ -61,6 +61,14 @@ app/
    uvicorn app.main:app --reload --port 8000
    ```
 
+## Windows Quick Start (Backend + Frontend)
+From the project root, run:
+```bat
+run-local-windows.bat
+```
+
+This script opens two terminals: one for FastAPI (`localhost:8000`) and one for Vite (`localhost:3000`).
+
 ## Key Endpoints
 - `POST /auth/register`
 - `POST /auth/login`
